@@ -1,8 +1,8 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 const Without = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-r bg-black  flex items-center justify-center">
       <div className="text-center text-white px-6 md:px-12 py-12 md:py-24 w-full max-w-md bg-opacity-70 rounded-xl shadow-lg">
         <h1 className="text-4xl font-extrabold mb-4">
           Welcome to <span className="text-yellow-300">EcommerceBot</span>
@@ -12,13 +12,17 @@ const Without = () => {
         </p>
         
         {/* Sign In & Sign Up Buttons */}
-        <div className="space-y-4">
+        <div className="space-y-4 flex  flex-col">
+            <Link to={"/login"}>
           <button className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-300">
             Sign In
           </button>
+          </Link>
+          <Link to={"/register"}>
           <button className="w-full py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-lg shadow-md transition duration-300">
             Sign Up
           </button>
+          </Link>
         </div>
         
         {/* Optional: Chatbot Introduction */}
