@@ -95,7 +95,7 @@ function Chatbot() {
         setloading(false)
     } catch (error) {
         console.error("Error occurred:", error);
-
+        setloading(false)
         // Add error message to the chat
         setChat((prevChat) => [
             ...prevChat,

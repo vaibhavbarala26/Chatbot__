@@ -14,6 +14,7 @@ import Home from './page/Home.jsx';
 import GetProduct from './page/Product.jsx';
 import Mycart from './page/Mycart.jsx';
 import History from './page/History.jsx';
+import Without from './page/Without.jsx';
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
       <Home></Home>
     </SignedIn>
     <SignedOut>
-      <h1>hello</h1>
+      <Without></Without>
     </SignedOut>
     </>
   }
