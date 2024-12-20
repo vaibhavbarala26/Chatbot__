@@ -13,7 +13,7 @@ import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react'
 import Home from './page/Home.jsx';
 import GetProduct from './page/Product.jsx';
 import Mycart from './page/Mycart.jsx';
-import History from './page/history.jsx';
+import History from './page/History.jsx';
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
